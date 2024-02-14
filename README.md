@@ -3,7 +3,7 @@
 Arguments are turned to list of strings and assigned to argv variable->sys module
 Access list: import sys
 sys.argv[0]->empty string ie when no script or arg is passed.
-when scriptname == '-', sys.argv[0]  is set to '-'(standard input), 
+when scriptname == '-', sys.argv[0]  is set to '-'(standard input),
 -c sets sys.argv[0] -> '-c' or -m module set sys.argv[0] -> fullname of located module
 
 ## Interactive Mode
@@ -35,11 +35,10 @@ Note: Division operator always return a floating number in cases of remainders.
 = -> assign value to variable
 Note: In interactive mode, the last printed expression is assigned to the '_' variable. This is handy in calculations or situations where last value is easily used or recalled
 
-
 Error: If a variable is not defined.
 NameError:name 'var' is not defined
 
-## Text 
+## Text
 
 Python can also manipulate text, strings, numbers & characters enclosed in single ' ' or double " " quotes
 To quote a quote, either escape it with \ or uses the other type of quoation mark
@@ -75,4 +74,20 @@ keywords arguments can also be used
 
 ## f-strings(formatted string literals)
 
+exe01.py(coding examples)
 f-strings are string literals that have an f before the opening quotation mark. This behaviour turns f-string into a string interpolation tool
+Python evaluates f-strings at runtime. Python can only interpolate these variables, because they are declared before the f-string(ie they must be in scope when python evaluates the f-string).
+Also, python expressions, functions, and method calls can be used with f-strings
+
+## Formatting Strings with Python's F-String
+
+Expressions in a f-string literal are hhandled using the *format_()* underneath. THis methods underpins both *.format()*  and the built-in format() function
+
+## Other Relevant Features of F-Strings
+
+python strings support two flags
+!s - Interpolates string representation from *_str_()* method(user friendly string representation)
+!r - Interpolates string representation **_repr___()** method(developer friendly string representation)
+
+## Further Reading:<https://realpython.com/python-f-strings/>
+
